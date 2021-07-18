@@ -11,8 +11,6 @@ Box
 
 import './Navbar.css'
 
-
-
 function Navbar({countries, country, onCountryChange}) {
     const useStyles = makeStyles((theme) => ({
         root: {
@@ -33,7 +31,6 @@ function Navbar({countries, country, onCountryChange}) {
         },
         displayFlex: {
             display: 'flex',
-            
         }
 
       }));
@@ -50,7 +47,6 @@ function Navbar({countries, country, onCountryChange}) {
                 <FormControl variant="filled" 
                     className="navbar__formControl--dropDown"
                 >
-                    {/* <InputLabel htmlFor="filled-age-native-simple">WorldWide</InputLabel> */}
                     <Select
                         variant="outlined"
                         value={country}
@@ -58,7 +54,7 @@ function Navbar({countries, country, onCountryChange}) {
                     >
                         <MenuItem value="worldwide">
                             WorldWide
-                        </MenuItem>)
+                        </MenuItem>
 
                         {countries.map(country => 
                             <MenuItem value={country.value} 

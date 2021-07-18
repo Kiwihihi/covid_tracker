@@ -2,7 +2,7 @@ import { Avatar,
 	Card, 
 	CardContent, 
 	makeStyles, 
-	Typography } from '@material-ui/core';
+	 } from '@material-ui/core';
 import React from 'react';
 import {dataSorted} from '../../util'
 import './AppRight.css'

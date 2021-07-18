@@ -58,8 +58,6 @@ const options = {
     },
   },
   maintainAspectRatio: true,
- 
-
   };
 
 const buildChartData = (data, casesType) => {
@@ -89,13 +87,13 @@ function LineGraph({casesType}) {
             let chartData = buildChartData(data, casesType);
             setData(chartData);
             console.log('test',numeral(466938).format("0a"))
-            
+
         })
-    },[])
+    },[casesType])
 
     return (
         <div>
-        {data?.length > 0 && (
+        {data.length > 0 && (
           <Line
             data={{
               datasets: [
